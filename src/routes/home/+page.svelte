@@ -1,11 +1,9 @@
 <script lang="ts">
-    import { Test } from '$lib'
-    let name: String = "Tobi"
+    import { Navbar, Header, Footer } from "$lib/index";
+    let name: String = "Tobi";
 </script>
 
-<style>
-
-</style>
-
-<h1>Hello {name} </h1>
-<Test />
+<Header />
+<Navbar />
+<h1>Hello {name}</h1>
+<Footer />

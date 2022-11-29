@@ -1,3 +1,5 @@
-import Test from '$lib/components/Ccc.svelte'
+import Navbar from '$lib/components/Navbar.svelte'
+import Header from '$lib/components/Header.svelte'
+import Footer from '$lib/components/Footer.svelte'
 
-export { Test }
+export { Navbar, Header, Footer }
