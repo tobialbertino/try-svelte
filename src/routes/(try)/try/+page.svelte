@@ -100,6 +100,19 @@
 		</form>
 	</div>
 
+	<hr class="my-20">
+
+	<div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:scale-125 hover:rotate-45 hover:translate-x-16 hover:bg-pink-500 transition">
+	</div>
+
+	<div class="w-40 h-40 mx-auto rounded-lg mt-20 group">
+		<div class="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000 delay-1000">
+		</div>
+	</div>
+
+	<div class="w-40 h-40 mt-20 bg-pink-500 mx-auto rounded-lg shadow-lg animate-goyang">
+	</div>
+
 	<div class="mb-96" />
 </body>
 
