@@ -15,6 +15,9 @@
             : document.documentElement.classList.remove('dark');
     }
 
+	// add scroll-smooth html tag
+	document.documentElement.classList.add('scroll-smooth')
+
 </script>
 
 <svelte:head>
@@ -111,6 +114,28 @@
 	</div>
 
 	<div class="w-40 h-40 mt-20 bg-pink-500 mx-auto rounded-lg shadow-lg animate-goyang">
+	</div>
+
+	<hr class="my-20 border-t-4">
+
+	<div class="container mx-auto">
+		<div class="border rounded-lg shadow-lg p-10 relative">
+			<div class="w-10 h-10 bg-pink-200 rounded-full flex absolute -top-5 -right-5"><span class="text m-auto">❌</span></div>
+
+			<div class="w-10 h-10 bg-sky-200 rounded-full flex fixed bottom-5 right-5"><a href="#top" class="text-xl m-auto">🔝</a></div>
+
+			<img src="img/1.jpg" alt="laptop" width="150" class="float-left mr-3">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum non asperiores officiis, pariatur ipsam molestias, nihil voluptas provident qui recusandae quae cum velit repudiandae aut dolorem voluptatibus debitis ullam repellendus beatae? Iure mollitia repellat reprehenderit, tempora cum totam consectetur voluptatem at enim porro dolorem impedit eos qui laborum veritatis!</p>
+		</div>
+	</div>
+
+	<div class="container mx-auto border rounded-lg shadow-lg p-10 mt-20 columns-3">
+		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4">
+		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4">
+		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4">
+		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4">
+		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4">
+		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4">
 	</div>
 
 	<div class="mb-96" />
