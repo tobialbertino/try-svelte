@@ -1,23 +1,20 @@
 <script lang="ts">
-    // const html = document.querySelector('body');
-    // const checkBox = document.querySelector('#toggle');
+	// const html = document.querySelector('body');
+	// const checkBox = document.querySelector('#toggle');
 
-    // checkBox?.addEventListener("click", function() {
-    //     checkBox?.ariaChecked ? html?.classList.add('dark') : html?.classList.remove('dark');
-    // });
-    let darkMode = false;
+	// checkBox?.addEventListener("click", function() {
+	//     checkBox?.ariaChecked ? html?.classList.add('dark') : html?.classList.remove('dark');
+	// });
+	let darkMode = false;
 
-    function handleSwitchDarkMode() {
-        darkMode = !darkMode;
+	function handleSwitchDarkMode() {
+		darkMode = !darkMode;
 
-        darkMode
-            ? document.documentElement.classList.add('dark')
-            : document.documentElement.classList.remove('dark');
-    }
+		darkMode ? document.documentElement.classList.add("dark") : document.documentElement.classList.remove("dark");
+	}
 
 	// add scroll-smooth html tag
-	document.documentElement.classList.add('scroll-smooth')
-
+	document.documentElement.classList.add("scroll-smooth");
 </script>
 
 <svelte:head>
@@ -68,18 +65,21 @@
 
 	<hr class="my-20" />
 
-    <div class="flex justify-center">
-        <span class="text-sm text-slate-500 mr-2">Light</span>
-        <input type="checkbox" id="toggle" class="hidden" checked={darkMode} on:click={handleSwitchDarkMode}>
-        <label for="toggle">
-            <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
-                <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
-            </div>
-        </label>
-        <span class="text-sm text-slate-500 ml-2">Dark</span>
-    </div>
+	<div class="flex justify-center">
+		<span class="text-sm text-slate-500 mr-2">Light</span>
+		<input type="checkbox" id="toggle" class="hidden" checked={darkMode} on:click={handleSwitchDarkMode} />
+		<label for="toggle">
+			<div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
+				<div class="w-4 h-4 bg-white rounded-full toggle-circle" />
+			</div>
+		</label>
+		<span class="text-sm text-slate-500 ml-2">Dark</span>
+	</div>
 
-	<button class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-sans block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300 dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 dark:hover:bg-slate-100">Save</button>
+	<button
+		class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-sans block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300 dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 dark:hover:bg-slate-100"
+		>Save</button
+	>
 
 	<div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-sans hover:bg-sky-500 group dark:hover:bg-slate-300">
 		<h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white dark:group-hover:text-slate-800">My Card</h5>
@@ -103,20 +103,17 @@
 		</form>
 	</div>
 
-	<hr class="my-20">
+	<hr class="my-20" />
 
-	<div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:scale-125 hover:rotate-45 hover:translate-x-16 hover:bg-pink-500 transition">
-	</div>
+	<div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:scale-125 hover:rotate-45 hover:translate-x-16 hover:bg-pink-500 transition" />
 
 	<div class="w-40 h-40 mx-auto rounded-lg mt-20 group">
-		<div class="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000 delay-1000">
-		</div>
+		<div class="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000 delay-1000" />
 	</div>
 
-	<div class="w-40 h-40 mt-20 bg-pink-500 mx-auto rounded-lg shadow-lg animate-goyang">
-	</div>
+	<div class="w-40 h-40 mt-20 bg-pink-500 mx-auto rounded-lg shadow-lg animate-goyang" />
 
-	<hr class="my-20 border-t-4">
+	<hr class="my-20 border-t-4" />
 
 	<div class="container mx-auto">
 		<div class="border rounded-lg shadow-lg p-10 relative">
@@ -124,32 +121,80 @@
 
 			<div class="w-10 h-10 bg-sky-200 rounded-full flex fixed bottom-5 right-5"><a href="#top" class="text-xl m-auto">🔝</a></div>
 
-			<img src="img/1.jpg" alt="laptop" width="150" class="float-left mr-3">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum non asperiores officiis, pariatur ipsam molestias, nihil voluptas provident qui recusandae quae cum velit repudiandae aut dolorem voluptatibus debitis ullam repellendus beatae? Iure mollitia repellat reprehenderit, tempora cum totam consectetur voluptatem at enim porro dolorem impedit eos qui laborum veritatis!</p>
+			<img src="img/1.jpg" alt="laptop" width="150" class="float-left mr-3" />
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum non asperiores officiis, pariatur ipsam molestias, nihil voluptas provident qui recusandae quae cum velit repudiandae aut dolorem voluptatibus debitis ullam repellendus beatae?
+				Iure mollitia repellat reprehenderit, tempora cum totam consectetur voluptatem at enim porro dolorem impedit eos qui laborum veritatis!
+			</p>
 		</div>
 	</div>
 
 	<div class="container mx-auto border rounded-lg shadow-lg p-10 mt-20 columns-3">
-		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4">
-		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4">
-		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4">
-		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4">
-		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4">
-		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4">
+		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4" />
+		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4" />
+		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4" />
+		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4" />
+		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4" />
+		<img src="https://source.unsplash.com/600x400" alt="random" class="mb-4" />
 	</div>
 
-	<hr class="my-24 border-t-4">
+	<hr class="my-24 border-t-4" />
 
-	<div class="container px-6 font-sans max-w-md mx-auto sm:max-w-xl md:max-w-5xl">
-		<h3 class="text-4xl font-bold text-slate-800 sm:text-5xl md:text-6xl">Tobi <span class="text-sky-500">Alber</span>tino</h3>
-		<img src="img/2.jpg" alt="laptop" class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-center">
-		<h2 class="mt-6 text-2xl font-semibold text-slate-800 sm:mt-8 sm;text-4xl">Mari belajar programming bersama</h2>
-		<p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero modi fuga facere, provident, alias ipsam quisquam incidunt cumque in quis cupiditate. Facilis reprehenderit vero saepe facere eum minima aliquid nobis deleniti voluptate molestiae quia expedita, doloremque sit, quisquam vitae illum!
-		</p>
+	<div class="container px-6 font-sans max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:p-0">
+		<div class="lg:p-12 lg:flex-1">
+			<h3 class="text-4xl font-bold text-slate-800 sm:text-5xl md:text-6xl">Tobi <span class="text-sky-500">Alber</span>tino</h3>
+			<img src="img/2.jpg" alt="laptop" class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden" />
+			<h2 class="mt-6 text-2xl font-semibold text-slate-800 sm:mt-8 sm;text-4xl">Mari belajar programming bersama</h2>
+			<p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero modi fuga facere, provident, alias ipsam quisquam incidunt cumque in quis cupiditate. Facilis reprehenderit vero saepe facere eum minima aliquid nobis!
+			</p>
 
-		<div class="mt-4 sm:mt-6 sm:">
-			<a href="#top" class="inline-block px-5 py-3 bg-red-600 text-white rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm sm:text-base">Subcribe</a>
+			<div class="mt-4 sm:mt-6 sm:">
+				<a href="#top" class="inline-block px-5 py-3 bg-red-600 text-white rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm sm:text-base">Subscribe</a>
+			</div>
+		</div>
+		<div class="hidden lg:flex lg:w-1/2 ">
+			<img src="img/2.jpg" alt="laptop" class="object-cover rounded-l-3xl">
+		</div>
+	</div>
+
+	<h2 class="mt-24 mb-10 text-center font-bold text-3xl text-slate-700">My Gallery</h2>
+
+	<div class="container mx-auto px-6 font-sans sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly">
+		<div class="rounded-xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full">
+			<div class="px-6 py-4">
+				<div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+				<p class="text-sm text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, eum.</p>
+			</div>
+		</div>
+		<div class="rounded-xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full">
+			<div class="px-6 py-4">
+				<div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+				<p class="text-sm text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, eum.</p>
+			</div>
+		</div>
+		<div class="rounded-xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full">
+			<div class="px-6 py-4">
+				<div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+				<p class="text-sm text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, eum.</p>
+			</div>
+		</div>
+		<div class="rounded-xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full">
+			<div class="px-6 py-4">
+				<div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+				<p class="text-sm text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, eum.</p>
+			</div>
+		</div>
+		<div class="rounded-xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full">
+			<div class="px-6 py-4">
+				<div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+				<p class="text-sm text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, eum.</p>
+			</div>
 		</div>
 	</div>
 
@@ -160,7 +205,7 @@
 	/* * {
 		border: 1px solid red;
 	} */
-    #toggle:checked ~ label div.toggle-circle {
-        @apply translate-x-3
-    }
+	#toggle:checked ~ label div.toggle-circle {
+		@apply translate-x-3;
+	}
 </style>
