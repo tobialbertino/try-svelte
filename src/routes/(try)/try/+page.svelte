@@ -154,7 +154,7 @@
 			</div>
 		</div>
 		<div class="hidden lg:flex lg:w-1/2 ">
-			<img src="img/2.jpg" alt="laptop" class="object-cover rounded-l-3xl">
+			<img src="img/2.jpg" alt="laptop" class="object-cover rounded-l-3xl" />
 		</div>
 	</div>
 
@@ -162,35 +162,35 @@
 
 	<div class="container mx-auto px-6 font-sans sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly">
 		<div class="rounded-xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
-			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full">
+			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full" />
 			<div class="px-6 py-4">
 				<div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
 				<p class="text-sm text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, eum.</p>
 			</div>
 		</div>
 		<div class="rounded-xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
-			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full">
+			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full" />
 			<div class="px-6 py-4">
 				<div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
 				<p class="text-sm text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, eum.</p>
 			</div>
 		</div>
 		<div class="rounded-xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
-			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full">
+			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full" />
 			<div class="px-6 py-4">
 				<div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
 				<p class="text-sm text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, eum.</p>
 			</div>
 		</div>
 		<div class="rounded-xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
-			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full">
+			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full" />
 			<div class="px-6 py-4">
 				<div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
 				<p class="text-sm text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, eum.</p>
 			</div>
 		</div>
 		<div class="rounded-xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
-			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full">
+			<img src="https://source.unsplash.com/600x400" alt="random" class="w-full" />
 			<div class="px-6 py-4">
 				<div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
 				<p class="text-sm text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, eum.</p>
@@ -202,46 +202,48 @@
 		<h2 class="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span class="self-center">Hello Tobi</span></h2>
 		<div class="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 md:flex"><span class="self-end">@tobialbertino</span></div>
 
-		<div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+		<div class="grid-card group">
+			<div class="grid-card-img bg-[url('https://source.unsplash.com/640x480')]" />
 		</div>
-		<div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>	
+		<div class="grid-card group md:col-start-3">
+			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500" />
 		</div>
-		<div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>	
+		<div class="grid-card group">
+			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500" />
 		</div>
-		<div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>	
+		<div class="grid-card group">
+			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500" />
 		</div>
-		<div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>	
+		<div class="grid-card group">
+			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500" />
 		</div>
-		<div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>	
+		<div class="grid-card group md:col-start-2">
+			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500" />
 		</div>
-		<div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>	
+		<div class="grid-card group md:col-start-4">
+			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500" />
 		</div>
-		<div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>	
+		<div class="grid-card group">
+			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500" />
 		</div>
-		<div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>	
+		<div class="grid-card group md:col-start-3">
+			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500" />
 		</div>
-		<div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>	
+		<div class="grid-card group md:col-start-3">
+			<div class="w-full h-full bg-[url('https://source.unsplash.com/640x480')] absolute bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500" />
 		</div>
 	</div>
 
 	<div class="mb-96" />
 </body>
 
+<h1>Hello World!</h1>
+
 <style lang="postcss">
 	/* * {
 		border: 1px solid red;
 	} */
-	#toggle:checked ~ label div.toggle-circle {
+	/* #toggle:checked ~ label div.toggle-circle {
 		@apply translate-x-3;
-	}
+	} */
 </style>
