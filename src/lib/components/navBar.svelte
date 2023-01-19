@@ -17,14 +17,15 @@
 	// 		header?.classList.remove('navbar-fixed');
 	// 	}
 	// }
-	function onScroll() {
+
+	function parseScroll(y: number) {
+		// alert('The scroll event only triggers when there is content to scroll.')
 		const header = document.querySelector('header');
 		if (y > 0) {
 			header?.classList.add('navbar-fixed');
 		} else {
 			header?.classList.remove('navbar-fixed');
 		}
-		console.log(y)
 	}
 
 	function handleSwitchActive() {
@@ -33,11 +34,17 @@
 		hamburger?.classList.toggle("hamburger-active");
 		navMenu?.classList.toggle("hidden");
 	}
+
+	$: parseScroll(y);
 </script>
 
 <svelte:window bind:scrollY={y}/>
 
-<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 navbar-fixed">
+<div class="report mt-56">
+	<div>horizontal: {y}</div>
+</div>
+
+<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
 	<div class="container">
 		<div class="flex items-center justify-between relative">
 			<div class="px-4">
