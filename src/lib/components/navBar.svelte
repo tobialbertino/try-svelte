@@ -1,5 +1,7 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	let y = 0;
+	let header: HTMLElement | null;
 	// hunburger
 	// const hamburger = document.querySelector("#hamburger");
 
@@ -18,9 +20,12 @@
 	// 	}
 	// }
 
+	onMount(() => {
+		header = document.querySelector('header');
+	});
 	function parseScroll(y: number) {
 		// alert('The scroll event only triggers when there is content to scroll.')
-		const header = document.querySelector('header');
+		// const header = document.querySelector('header');
 		if (y > 0) {
 			header?.classList.add('navbar-fixed');
 		} else {
