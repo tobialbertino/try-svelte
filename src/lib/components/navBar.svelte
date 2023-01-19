@@ -1,4 +1,5 @@
 <script lang="ts">
+	let y = 0;
 	// hunburger
 	// const hamburger = document.querySelector("#hamburger");
 
@@ -7,15 +8,24 @@
 	// })
 
 	// navbar fixed
-	function onScrollNavBar() {
-		const header = document.querySelector("header");
-		const fixedNav = header!.offsetTop;
-		if (window.pageYOffset > fixedNav) {
-			header?.classList.add("navbar-fixed");
+	// window.onscroll = function () {
+	// 	const header = document.querySelector('header');
+	// 	const fixedNav = header?.offsetTop;
+	// 	if (window.pageYOffset > fixedNav) {
+	// 		header?.classList.add('navbar-fixed');
+	// 	} else {
+	// 		header?.classList.remove('navbar-fixed');
+	// 	}
+	// }
+	function onScroll() {
+		const header = document.querySelector('header');
+		if (y > 0) {
+			header?.classList.add('navbar-fixed');
 		} else {
-			header?.classList.remove("navbar-fixed");
+			header?.classList.remove('navbar-fixed');
 		}
-	};
+		console.log(y)
+	}
 
 	function handleSwitchActive() {
 		const hamburger = document.querySelector("#hamburger");
@@ -25,7 +35,9 @@
 	}
 </script>
 
-<header on:scroll={onScrollNavBar} class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+<svelte:window bind:scrollY={y}/>
+
+<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 navbar-fixed">
 	<div class="container">
 		<div class="flex items-center justify-between relative">
 			<div class="px-4">
