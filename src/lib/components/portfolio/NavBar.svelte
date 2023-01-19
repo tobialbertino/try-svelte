@@ -65,13 +65,22 @@
 				<nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
 					<ul class="block lg:flex">
 						<li class="group">
-							<a href="/" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Go: Home</a>
+							<a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
 						</li>
 						<li class="group">
-							<a href="/portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Go: Portfolio</a>
+							<a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About</a>
 						</li>
 						<li class="group">
-							<a href="/try" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Go: try tailwind</a>
+							<a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+						</li>
+						<li class="group">
+							<a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Clients</a>
+						</li>
+						<li class="group">
+							<a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
+						</li>
+						<li class="group">
+							<a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
 						</li>
 					</ul>
 				</nav>
