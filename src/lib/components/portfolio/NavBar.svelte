@@ -1,7 +1,12 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount } from "svelte";
 	let y = 0;
 	let header: HTMLElement | null;
+	let toTop: HTMLElement | null;
+	let hamburger = document.querySelector("#hamburger");
+	let navMenu = document.querySelector("#nav-menu");
+	console.log(hamburger)
+	console.log(navMenu)
 	// hunburger
 	// const hamburger = document.querySelector("#hamburger");
 
@@ -21,18 +26,23 @@
 	// }
 
 	onMount(() => {
-		header = document.querySelector('header');
+		header = document.querySelector("header");
+		toTop = document.querySelector("#to-top");
 	});
 	function parseScroll(y: number) {
-		// alert('The scroll event only triggers when there is content to scroll.')
-		// const header = document.querySelector('header');
 		if (y > 0) {
-			header?.classList.add('navbar-fixed');
+			header?.classList.add("navbar-fixed");
+			toTop?.classList.remove("hidden");
+			toTop?.classList.add("flex");
 		} else {
-			header?.classList.remove('navbar-fixed');
+			header?.classList.remove("navbar-fixed");
+			toTop?.classList.add("hidden");
+			toTop?.classList.remove("flex");
 		}
 	}
+	$: parseScroll(y);
 
+	// hamburger
 	function handleSwitchActive() {
 		const hamburger = document.querySelector("#hamburger");
 		const navMenu = document.querySelector("#nav-menu");
@@ -40,10 +50,24 @@
 		navMenu?.classList.toggle("hidden");
 	}
 
-	$: parseScroll(y);
+	// klik diluar hamburger
+	function switchOutsideH(event: any) {
+		console.log(event.target)
+		if (event.target != hamburger && event.target != navMenu) {
+			hamburger?.classList.remove("hamburger-active");
+			navMenu?.classList.add("hidden");
+		}
+	}
+
+	window.addEventListener("click", function (e) {
+		if (e.target != hamburger && e.target != navMenu) {
+			hamburger?.classList.remove("hamburger-active");
+			navMenu?.classList.add("hidden");
+		}
+	});
 </script>
 
-<svelte:window bind:scrollY={y}/>
+<svelte:window on:click={switchOutsideH} bind:scrollY={y}/>
 
 <!-- <div class="report mt-56">
 	<div>horizontal: {y}</div>
@@ -56,7 +80,7 @@
 				<a href="/" class="font-bold text-lg text-primary block py-6">Tobi Albertino</a>
 			</div>
 			<div class="flex items-center px-4">
-				<button on:click={handleSwitchActive} id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+				<button on:click|preventDefault={handleSwitchActive} id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
 					<span class="hanburger-line origin-top-left transition duration-300 ease-in-out" />
 					<span class="hanburger-line transition duration-300 ease-in-out" />
 					<span class="hanburger-line origin-bottom-left transition duration-300 ease-in-out" />

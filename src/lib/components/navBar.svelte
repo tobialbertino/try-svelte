@@ -2,37 +2,19 @@
 	import { onMount } from 'svelte';
 	let y = 0;
 	let header: HTMLElement | null;
-	// hunburger
-	// const hamburger = document.querySelector("#hamburger");
 
-	// hamburger?.addEventListener('click', function() {
-	//     hamburger.classList.toggle('hamburger-active')
-	// })
-
-	// navbar fixed
-	// window.onscroll = function () {
-	// 	const header = document.querySelector('header');
-	// 	const fixedNav = header?.offsetTop;
-	// 	if (window.pageYOffset > fixedNav) {
-	// 		header?.classList.add('navbar-fixed');
-	// 	} else {
-	// 		header?.classList.remove('navbar-fixed');
-	// 	}
-	// }
 
 	onMount(() => {
 		header = document.querySelector('header');
 	});
 	function parseScroll(y: number) {
-		// alert('The scroll event only triggers when there is content to scroll.')
-		// const header = document.querySelector('header');
 		if (y > 0) {
 			header?.classList.add('navbar-fixed');
 		} else {
 			header?.classList.remove('navbar-fixed');
 		}
 	}
-
+	
 	function handleSwitchActive() {
 		const hamburger = document.querySelector("#hamburger");
 		const navMenu = document.querySelector("#nav-menu");
