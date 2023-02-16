@@ -2,14 +2,14 @@
 	<div class="container">
 		<div class="flex flex-wrap">
 			<div class="w-full px-4 mb-10 lg:w-1/2">
-				<h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
-				<h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Yuk Beljar Front End engineer dengan tailwind</h2>
-				<p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam voluptate sed temporibus rem tempora, dicta id?</p>
+				<h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
+				<h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Software Dev, Backend Engineer and Machine Learning</h2>
+				<p class="font-medium text-base text-secondary max-w-xl lg:text-lg">I’m interested in Software Dev, mainly in backend engineer and Machine Learning</p>
 			</div>
 			<!-- column 2  -->
 			<div class="w-full px-4 lg:w-1/2">
-				<h3 class="font-semibold text-dark text-2xl mb-4 lg:pt-10">Mari berteman</h3>
-				<p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet unde doloribus facere facilis nesciunt quasi recusandae nemo inventore.</p>
+				<h3 class="font-semibold text-dark text-2xl mb-4 lg:pt-10">Reach Me</h3>
+				<p class="font-medium text-base text-secondary mb-6 lg:text-lg">Reach Me by Social Media.</p>
 				<div class="flex items-center">
 					<!-- Youtube -->
 					<a href="https://www.youtube.com/@tobialbertino" target="_blank" rel="noreferrer" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
